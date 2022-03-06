@@ -1,7 +1,5 @@
-import Footer from "../../Components/Footer";
 import styles from "./style.module.css";
 import bgImage from "../../assets/images/1.png";
-import {Link} from "react-router-dom";
 import bgImage1 from "../../assets/images/2.png";
 import bgImage2 from "../../assets/images/book.png";
 
