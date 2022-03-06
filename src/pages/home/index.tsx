@@ -1,16 +1,15 @@
-import bgImage from "../../assets/images/1.png";
 import Footer from "../../Components/Footer";
+import styles from "./style.module.css";
+import ParallaxBody from "../../Components/Parallax";
 
 export default function Home() {
   return (
-    <>
-      <div className="relative flex items-center justify-center overflow-hidden pt-80" style={{height: '25vh'}}>
-        <img className="object-fill" src={bgImage} alt="background"/>
-        <div className="p-5 text-2xl bg-purple-300 bg-opacity-50 rounded-xl">
-            hello
-        </div>
+    <div>
+      <div className={`bg-no-repeat bg-center bg-cover ${styles.customBG}`}>
+
       </div>
+      <ParallaxBody/>
       <Footer/>
-    </>
+    </div>
   )
 }

@@ -15,6 +15,7 @@ import {
   XIcon,
 } from '@heroicons/react/outline'
 import logo from "../../assets/images/finder.png";
+import {Link} from "react-router-dom";
 
 const solutions = [
   {
@@ -96,15 +97,9 @@ export default function Header() {
             </Popover.Button>
           </div>
           <Popover.Group as="nav" className="hidden md:flex space-x-10">
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Find a Book
-            </a>
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Quotes
-            </a>
-            <a href="../../pages/blog" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Blog
-            </a>
+            <Link to="/"><span className="text-base font-medium text-gray-500 hover:text-gray-900">Find a book</span></Link>
+            <Link to="/quotes"><span className="text-base font-medium text-gray-500 hover:text-gray-900">Quotes</span></Link>
+            <Link to="/blog"><span className="text-base font-medium text-gray-500 hover:text-gray-900">Blog</span></Link>
           </Popover.Group>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
           </div>
