@@ -1,4 +1,5 @@
 import styles from "./style.module.css";
+import Footer from "../../Components/Footer";
 
 export default function Quotes() {
   return (
@@ -40,6 +41,7 @@ export default function Quotes() {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   )
 }

@@ -5,6 +5,7 @@ import image1 from "../../assets/images/book1.jpg";
 import image2 from "../../assets/images/drift.jpg";
 import image3 from "../../assets/images/image1.jpg";
 import image4 from "../../assets/images/new.jpg";
+import SignUp from "../../Components/SignUp";
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
 
       </div>
       <ParallaxBody/>
-      <div className="h-screen bg-white flex items-center justify-center">
+      <SignUp/>
+      <div className="pb-20 bg-white flex items-center justify-center">
 
         <div className="grid grid-cols-6 gap-2 px-16">
           <div className="flex flex-col gap-1">
@@ -110,6 +112,7 @@ export default function Home() {
         </div>
 
       </div>
+
       <Footer/>
     </div>
   )
