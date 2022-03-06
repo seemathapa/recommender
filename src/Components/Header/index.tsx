@@ -102,7 +102,7 @@ export default function Header() {
             <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Quotes
             </a>
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            <a href="../../pages/blog" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Blog
             </a>
           </Popover.Group>
