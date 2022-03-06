@@ -10,8 +10,23 @@ import SignUp from "../../Components/SignUp";
 export default function Home() {
   return (
     <div>
-      <div className={`bg-no-repeat bg-center bg-cover ${styles.customBG}`}>
-
+      <div className={`bg-no-repeat bg-center bg-cover ${styles.customBG} flex items-center justify-center`}>
+        <form className="bg-white shadow-md rounded p-20 pt-10 pb-8 mb-4 opacity-90 max-w-7xl">
+          <div className="mb-4">
+            <label className="block text-gray-700 text-xl font-bold mb-2" htmlFor="username">
+              What do you wanna read today ?
+            </label>
+            <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight"
+              id="book" type="text" placeholder="Type any keywords"/>
+          </div>
+          <div className="flex items-center justify-center">
+            <button
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="button">
+              Search a Book
+            </button>
+          </div>
+        </form>
       </div>
       <ParallaxBody/>
       <SignUp/>
@@ -20,7 +35,8 @@ export default function Home() {
         <div className="grid grid-cols-6 gap-2 px-16">
           <div className="flex flex-col gap-1">
             <a href="/" className="bg-purple-100">
-              <img src={image1} className="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-100" alt={"hello"}/>
+              <img src={image1} className="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-100"
+                   alt={"hello"}/>
             </a>
             <a href="/" className="hover:text-purple-100 text-gray-600 font-semibold"> Best 2021 </a>
             <a href="/" className="hover:text-purple-100 text-sm text-gray-500 -mt-1"> 78.4K viewers </a>
